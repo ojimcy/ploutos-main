@@ -2,6 +2,8 @@ import React from 'react';
 import Hero from '../components/landing/Hero';
 import About from '../components/landing/About';
 import Partner from '../components/landing/Partners';
+import Tokenomics from '../components/landing/Tokenomics';
+import Features from '../components/landing/Features';
 
 export default function Home() {
   return (
@@ -9,6 +11,8 @@ export default function Home() {
       <Hero />
       <About />
       <Partner />
+      <Tokenomics />
+      <Features />
     </>
   );
 }
