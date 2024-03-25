@@ -1,0 +1,163 @@
+.header {
+  left: 0;
+  position: absolute;
+  top: 0;
+  width: 100%;
+}
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem;
+  background: transparent !important;
+}
+
+.navbar-right .nav-link {
+  border-width: 0 0 0 1px;
+  color: #ffffff;
+  cursor: pointer;
+  display: inline-block;
+  font-size: 16px;
+  padding: 32px 20px;
+  position: relative;
+  padding-right: 1.5rem;
+  font-family: Inter;
+  font-weight: 600;
+  line-height: 18.32px;
+  text-align: left;
+}
+
+.navbar-right .nav-link.active {
+  color: #362465 !important;
+}
+
+.navbar-right .nav-link:hover {
+  color: #362465 !important;
+}
+
+.navbar .navbar-logo img {
+  max-width: 160px;
+  height: 53.33px;
+}
+
+.navbar .user {
+  align-items: center;
+  display: flex;
+  float: right;
+  padding-left: 30px;
+  position: relative;
+  z-index: 9;
+}
+
+.navbar .user .btn {
+  font-size: 15px;
+  padding: 10px 40px;
+  line-height: 1.2;
+  display: inline-flex;
+  font-weight: 400;
+  position: relative;
+  text-transform: capitalize;
+  align-items: center;
+  overflow: hidden;
+  z-index: 1;
+  text-align: center;
+  justify-content: center;
+  border-radius: 8px;
+  min-width: 92px;
+}
+.navbar .user .login-btn {
+  border: 1px solid #362465;
+  color: #362465;
+  margin-right: 10px;
+}
+
+.navbar .user .register-btn {
+  border: 1px solid #362465;
+  background: #362465;
+  color: #ffffff;
+}
+
+.scrolled {
+  background-color: #0092ff !important;
+}
+
+.scrolled .navbar-right .nav-link.active {
+  color: #362465 !important;
+}
+
+.scrolled .navbar-right .nav-link:hover {
+  color: #362465 !important;
+}
+
+@media (max-width: 768px) {
+  .overlay {
+    position: fixed;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background-color: rgba(0, 0, 0, 0.5);
+    z-index: 999;
+  }
+
+  .navbar-card {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 80%;
+    height: 100vh;
+    background-color: #fff;
+    z-index: 1000;
+    transform: translateX(-100%);
+    transition: transform 0.3s ease-in-out;
+    padding: 70px 30px;
+  }
+
+  .navbar-card.open {
+    transform: translateX(0);
+  }
+
+  .close-btn {
+    position: absolute;
+    top: 1rem;
+    right: 1rem;
+    font-size: 1.5rem;
+    cursor: pointer;
+  }
+
+  .navbar .user {
+    padding-left: 0 !important;
+  }
+
+  .navbar-card .nav-link {
+    padding: 15px;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+    width: 100%;
+  }
+}
+
+.tab-toggle {
+  margin-left: 2rem;
+}
+
+.navicon {
+  background: rgba(0, 30, 95, 0.8);
+  border-radius: 8px;
+  box-shadow: 0 5px 15px -10px rgba(0, 30, 95, 0.8);
+  cursor: pointer;
+  height: 45px;
+  position: relative;
+  transition: 0.5s ease-in-out;
+  width: 45px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 24px;
+  color: #fff;
+}
+
+@media (min-width: 768px) {
+  .navbar-card {
+    display: block;
+  }
+}
