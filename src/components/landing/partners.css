@@ -1,0 +1,63 @@
+.partner-section {
+  padding: 60px 0;
+}
+
+.partner-inner {
+  text-align: center;
+}
+
+.partner-inner .sup-title {
+  font-family: Inter;
+  font-size: 20px;
+  font-weight: 500;
+  line-height: 22.9px;
+  color: #1282fa;
+}
+
+.partner-title {
+  text-align: center;
+}
+
+.partner-title .title {
+  font-family: Inter;
+  font-size: 36px;
+  font-weight: 600;
+  line-height: 41.22px;
+  color: #001e5f;
+}
+
+.partner-title .sub-title {
+  font-family: Inter;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 18.32px;
+  color: #1282fa;
+}
+
+.partner-logos {
+  display: flex;
+  justify-content: center;
+  margin-top: 4rem;
+}
+
+.partner-logo {
+  width: 289px;
+  height: 64px;
+  margin: 20px;
+}
+
+@media (max-width: 768px) {
+  .partner-logos {
+    flex-wrap: wrap;
+  }
+
+  .partner-logo {
+    width: 50%;
+    margin: 10px 0;
+    box-sizing: border-box;
+  }
+
+  .partner-title .title {
+    font-size: 33px;
+  }
+}
