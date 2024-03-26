@@ -34,7 +34,7 @@
 }
 
 .roadmap-card {
-  width: 521px;
+  max-width: 521px;
   min-height: 612px;
   padding: 50px 77px 50px 77px;
   border-radius: 20px;
@@ -61,7 +61,7 @@
 }
 
 .line-border {
-  margin-top: 4rem;
+  margin: 2rem 0;
 }
 
 .custom-navigation {
@@ -117,8 +117,19 @@
   text-transform: capitalize;
 }
 
-@media (min-width: 993px) {
+@media screen and (min-width: 993px) {
   .roadmap-header {
     width: 466px;
   }
 }
+
+@media screen and (max-width: 993px) {
+  .roadmap-wrapper {
+    height: auto;
+    padding: 10px 15px 10px 15px;
+  }
+  .roadmap-card {
+    padding: 16px 17px;
+  }
+}
+

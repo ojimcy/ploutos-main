@@ -67,7 +67,7 @@
   margin-bottom: 25px;
   font-size: 15px;
   line-height: 26px;
-  color: #fff;
+  color: #001e5f;
 }
 
 .footer-content .footer-social {
@@ -93,7 +93,6 @@
   background: #d9d9d9;
   font-weight: 400;
   transition: color 0.3s ease-in-out;
-  
 }
 
 .footer-content .footer-social li a:hover {
@@ -111,14 +110,25 @@
 
 .footer-link ul {
   list-style: none;
+  display: flex;
+  justify-content: flex-end;
 }
 
 .footer-link .link-item a {
-  color: #a4b4c3;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #001e5f;
   font-size: 15px;
   line-height: 20px;
-  position: relative;
   text-decoration: none;
+  font-family: Inter;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 18.32px;
+  padding: 32px 20px;
+  position: relative;
+  padding-right: 1.5rem;
 }
 
 .footer-link .link-item a::before {
@@ -140,7 +150,7 @@
 
 .footer-link .link-item a:hover {
   text-decoration: underline;
-  color: #fff;
+  color: #fdd267;
   font-weight: 700;
 }
 
@@ -150,7 +160,13 @@
 }
 
 .footer-bottom p {
-  color: #fff;
+  color: #001e5f;
+  font-family: Inter;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 18.32px;
+  text-align: left;
+  padding: 32px 20px;
 }
 
 .mail a {
@@ -170,5 +186,25 @@
 @media screen and (max-width: 768px) {
   .footer-area {
     padding: 38px 18px;
+  }
+}
+
+@media screen and (max-width: 993px) {
+  .footer-bottom p {
+    display: flex;
+    justify-content: center;
+    padding: 0;
+  }
+
+  .footer-link ul {
+    justify-content: center;
+    padding-left: 0;
+  }
+
+  .footer-link .link-item a {
+    font-size: 13px;
+    font-weight: 400;
+    line-height: 18.32px;
+    padding: 16px 1px;
   }
 }

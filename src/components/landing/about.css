@@ -61,6 +61,10 @@
     padding-left: 25px;
   }
 
+  .about-img img {
+    border-radius: 27px;
+}
+
   .about-content {
     width: 488px;
     height: 575px;

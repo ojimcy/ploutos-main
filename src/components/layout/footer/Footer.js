@@ -15,7 +15,6 @@ import './Footer.css';
 import logo from '../../../assets/images/logo.png';
 
 function Footer() {
-
   return (
     <footer>
       <div className="footer-area">
@@ -94,11 +93,30 @@ function Footer() {
           </div>
           <div className="footer-bottom">
             <Row>
-              <Col className="text-center" lg="12">
+              <Col className="text-left" md="12" lg="6">
                 <p>
                   © 2023
-                  <span> Millionaire Circle Green Protocol</span>
+                  <span> All right reserved</span>
                 </p>
+              </Col>
+              <Col className='md="12" lg="6"'>
+                <div className="footer-link">
+                  <ul>
+                    <li className="link-item">
+                      <Link to="/#">Terms & condition</Link>
+                    </li>
+                    <li className="link-item">
+                      <Link className="link-item" to="/#">
+                        Privacy Policy
+                      </Link>
+                    </li>
+                    <li className="link-item">
+                      <Link className="link-item" to="/#">
+                        Contact us
+                      </Link>
+                    </li>
+                  </ul>
+                </div>
               </Col>
             </Row>
           </div>

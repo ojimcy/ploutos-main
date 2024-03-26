@@ -229,12 +229,11 @@
   }
 }
 
-/* 
-@media (min-width: 769px) and (max-width: 1199px) {
-  .main-title {
-    font-size: 75px;
+@media screen and (max-width: 993px) {
+  .hero {
+    padding-bottom: 0;
   }
-} */
+}
 
 /* For extra large devices (e.g., large desktops) */
 @media (min-width: 1200px) {
