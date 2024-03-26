@@ -25,7 +25,7 @@ function Features() {
             </div>
           </Row>
           <Row className="mt-4">
-            <Col md={12} lg={4}>
+            <Col sm={12} md={6} xl={4}>
               <div className="feature-card mt-3">
                 <div className="inner">
                   <div className="feature-card-header text-center">
@@ -44,7 +44,7 @@ function Features() {
                 </div>
               </div>
             </Col>
-            <Col md={12} lg={4}>
+            <Col sm={12} md={6} xl={4}>
               <div className="feature-card mt-3">
                 <div className="inner">
                   <div className="feature-card-header text-center">
@@ -64,7 +64,7 @@ function Features() {
                 </div>
               </div>
             </Col>
-            <Col md={12} lg={4}>
+            <Col sm={12} md={6} xl={4}>
               <div className="feature-card mt-3">
                 <div className="inner">
                   <div className="feature-card-header text-center">
@@ -83,9 +83,7 @@ function Features() {
                 </div>
               </div>
             </Col>
-          </Row>
-          <Row className="mt-4">
-            <Col md={12} lg={4}>
+            <Col sm={12} md={6} xl={4}>
               <div className="feature-card mt-3">
                 <div className="inner">
                   <div className="feature-card-header text-center">
@@ -102,7 +100,7 @@ function Features() {
                 </div>
               </div>
             </Col>
-            <Col md={12} lg={4}>
+            <Col sm={12} md={6} xl={4}>
               <div className="feature-card mt-3">
                 <div className="inner">
                   <div className="feature-card-header text-center">
@@ -119,7 +117,7 @@ function Features() {
                 </div>
               </div>
             </Col>
-            <Col md={6} lg={4}>
+            <Col md={6} lg={6} xl={4}>
               <div className="feature-card mt-3">
                 <div className="inner">
                   <div className="feature-card-header text-center">
