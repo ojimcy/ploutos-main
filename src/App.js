@@ -1,11 +1,19 @@
-import React from 'react';
+import React, { useEffect } from 'react';
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 import Layout from './components/layout/Layout';
 import Home from './pages/Home';
 import Dashboard from './pages/dashboard/Dashboard';
 import DashboardLayout from './components/layout/DashboardLayout';
 
+import WOW from 'wowjs';
+import 'wowjs/css/libs/animate.css';
+
 const App = () => {
+  useEffect(() => {
+    const wow = new WOW.WOW();
+    wow.init();
+  }, []);
+
   return (
     <Router>
       <Routes>

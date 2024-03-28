@@ -174,7 +174,7 @@
 @media (max-width: 576px) {
   .main-title {
     font-size: 30px;
-    line-height: 56px;
+    line-height: 37px;
     height: 112px;
   }
   .content-title p {
@@ -215,7 +215,7 @@
 /* For large devices (e.g., laptops, desktops) */
 @media (min-width: 769px) and (max-width: 992px) {
   .main-title {
-    font-size: 55px;
+    font-size: 50px;
     line-height: 64px;
     height: 144px;
   }
@@ -238,6 +238,6 @@
 /* For extra large devices (e.g., large desktops) */
 @media (min-width: 1200px) {
   .main-title {
-    font-size: 85px;
+    font-size: 75px;
   }
 }

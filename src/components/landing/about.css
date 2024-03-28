@@ -71,7 +71,7 @@
   }
 }
 
-@media (max-width: 768px) {
+@media (max-width: 992px) {
   .about-content .about-text {
     margin-top: 4rem;
   }

@@ -13,18 +13,18 @@ export default function About() {
         <Container>
           <div className="content-inner-1">
             <div className="section-head">
-              <h2 className="title">About Ploutus</h2>
+              <h2 className="title">About Ploutos</h2>
             </div>
             <Row className="align-items-center justify-content-center">
               <Col lg={6}>
-                <div className="about-img wow fadeInLeft" data-wow-delay=".2s">
+                <div className="about-img wow fadeInLeft" data-wow-delay=".5s">
                   <img src={about} alt="about" />
                 </div>
               </Col>
               <Col lg={6}>
                 <div
                   className="about-content wow fadeInRight"
-                  data-wow-delay=".5s"
+                  data-wow-delay="1s"
                 >
                   <div className="about-text">
                     <p>

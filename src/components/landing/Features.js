@@ -26,7 +26,7 @@ function Features() {
           </Row>
           <Row className="mt-4">
             <Col sm={12} md={6} xl={4}>
-              <div className="feature-card mt-3">
+              <div className="feature-card mt-3 wow fadeInUp" data-wow-duration="1s" data-wow-delay="1s">
                 <div className="inner">
                   <div className="feature-card-header text-center">
                     <img src={feature1} alt="Feature 1" />
@@ -45,7 +45,7 @@ function Features() {
               </div>
             </Col>
             <Col sm={12} md={6} xl={4}>
-              <div className="feature-card mt-3">
+              <div className="feature-card mt-3 wow fadeInUp" data-wow-duration="1s" data-wow-delay="1s">
                 <div className="inner">
                   <div className="feature-card-header text-center">
                     <img src={feature2} alt="Feature 2" />
@@ -65,7 +65,7 @@ function Features() {
               </div>
             </Col>
             <Col sm={12} md={6} xl={4}>
-              <div className="feature-card mt-3">
+              <div className="feature-card mt-3 wow fadeInUp" data-wow-duration="1s" data-wow-delay="1s">
                 <div className="inner">
                   <div className="feature-card-header text-center">
                     <img src={feature3} alt="Feature 3" />
@@ -84,7 +84,7 @@ function Features() {
               </div>
             </Col>
             <Col sm={12} md={6} xl={4}>
-              <div className="feature-card mt-3">
+              <div className="feature-card mt-3 wow fadeInUp" data-wow-duration="1s" data-wow-delay="1s">
                 <div className="inner">
                   <div className="feature-card-header text-center">
                     <img src={feature4} alt="Feature 1" />
@@ -101,7 +101,7 @@ function Features() {
               </div>
             </Col>
             <Col sm={12} md={6} xl={4}>
-              <div className="feature-card mt-3">
+              <div className="feature-card mt-3 wow fadeInUp" data-wow-duration="1s" data-wow-delay="1s">
                 <div className="inner">
                   <div className="feature-card-header text-center">
                     <img src={feature5} alt="Feature 2" />
@@ -118,7 +118,7 @@ function Features() {
               </div>
             </Col>
             <Col md={6} lg={6} xl={4}>
-              <div className="feature-card mt-3">
+              <div className="feature-card mt-3 wow fadeInUp" data-wow-duration="1s" data-wow-delay="1s">
                 <div className="inner">
                   <div className="feature-card-header text-center">
                     <img src={feature6} alt="Feature 3" />

@@ -1,12 +1,14 @@
 import React, { useState, useEffect } from 'react';
 import './Navbar.css';
 import { Link, useLocation } from 'react-router-dom';
-import { animateScroll as scroll, scrollSpy } from 'react-scroll';
+import { scrollSpy } from 'react-scroll';
 import { Container, Nav, Navbar } from 'reactstrap';
 import { FaBars, FaTimes } from 'react-icons/fa';
 import MobileMenu from '../../navs/MobileNav';
 
 import logo from '../../../assets/images/logo.png';
+
+import whitePaper from '../../../assets/white-paper.pdf';
 
 function MainNavigation() {
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
@@ -60,15 +62,22 @@ function MainNavigation() {
   };
 
   const scrollToSection = (sectionId) => {
-    scroll.scrollTo(sectionId, {
-      duration: 500,
-      smooth: 'easeInOutQuart',
-      offset: -80,
-    });
-    toggleMobileMenu();
+    const section = document.getElementById(sectionId);
+    if (section) {
+      window.scrollTo({
+        top: section.offsetTop - 180,
+        behavior: 'smooth',
+      });
+      toggleMobileMenu();
+    }
   };
 
   const isNavLinkActive = (path) => {
+    // Check if both path and activeTab are exactly '/'
+    if (path === '/' && activeTab === '/') {
+      return 'active';
+    }
+    // For other paths, use the comparison with activeTab
     return activeTab === path ? 'active' : '';
   };
 
@@ -103,26 +112,26 @@ function MainNavigation() {
                   Home
                 </Link>
                 <Link
-                  className={`nav-link mr-1 ${isNavLinkActive('/#tokenomicx')}`}
-                  to="/"
-                  onClick={() => scrollToSection('tokenomicx')}
+                  className={`nav-link mr-1 ${isNavLinkActive('/#tokenomics')}`}
+                  to="/#tokenomics"
+                  onClick={() => scrollToSection('tokenomics')}
                 >
                   Tokenomics
                 </Link>
                 <Link
                   className={`nav-link mr-1 ${isNavLinkActive('/#roadmap')}`}
-                  to="/"
+                  to="/#roadmap"
                   onClick={() => scrollToSection('roadmap')}
                 >
                   Roadmap
                 </Link>
-                <Link
-                  className={`nav-link mr-1 ${isNavLinkActive('/assets/white-paper.pdf')}`}
-                  to="/"
-                  onClick={() => scrollToSection('roadmap')}
+                <a
+                  className={`nav-link mr-1 }`}
+                  href={whitePaper}
+                  target="_blank" rel="noreferrer"
                 >
                   White paper
-                </Link>
+                </a>
               </Nav>
             )}
 
@@ -146,10 +155,11 @@ function MainNavigation() {
       </Navbar>
 
       {/* Mobile Menu */}
-      {isMobile  && (
+      {isMobile && (
         <MobileMenu
           isOpen={isMobileMenuOpen}
           toggleMobileMenu={toggleMobileMenu}
+          scrollToSection={scrollToSection}
         />
       )}
     </header>

@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from 'react';
+import React, { useState, useEffect, useRef } from 'react';
 import { Container } from 'reactstrap';
 import { Swiper, SwiperSlide } from 'swiper/react';
 import 'swiper/css';
@@ -36,10 +36,10 @@ function Roadmap() {
     }
   };
 
-  const swiper = React.useRef(null);
+  const swiper = useRef(null);
 
   return (
-    <section id="roadmap" className="section-wrapper">
+    <section id='roadmap' className="section-wrapper">
       <Container>
         <div className="roadmap-wrapper">
           <div className="roadmap-header">
@@ -60,6 +60,9 @@ function Roadmap() {
               breakpoints={{
                 768: {
                   slidesPerView: 2,
+                },
+                576: {
+                  slidesPerView: 1,
                 },
               }}
             >

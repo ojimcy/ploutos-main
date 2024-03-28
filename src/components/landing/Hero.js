@@ -22,10 +22,10 @@ export default function Hero() {
           <div className=" hero-content d-flex justify-content-center align-items-center">
             <Container>
               <div className="content-title">
-                <h1 className="main-title text-center">
-                  <span>Ploutus:</span> Redefining Cryptocurrency.
+                <h1 className="main-title text-center wow fadeIn" data-wow-duration="1s" data-wow-delay="0.5s">
+                  <span>Ploutos:</span> Redefining Cryptocurrency.
                 </h1>
-                <p className="text-center">
+                <p className="text-center wow fadeInUp" data-wow-duration="1s" data-wow-delay="1s">
                   With a limited supply release gradually over 8 years period,
                   PLOUTOS ensure Stability. Positioning in gamefi and Nfts.
                   Partnering with celebrities and companies worldwide, we offer

@@ -26,7 +26,7 @@ function Tokenomics() {
           <Row>
             <Col sm={12} md={6}>
               <div className="details">
-                <ul className='tokenomics-list'>
+                <ul className="tokenomics-list">
                   <li>30% Prsale</li>
                   <li>20% Core team</li>
                   <li>2.5% Developer</li>
