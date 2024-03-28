@@ -1,5 +1,5 @@
 .roadmap-wrapper {
-  height: 968px;
+  height: 991px;
   padding: 27px 74px 27px 74px;
   background: linear-gradient(110.18deg, #001e5f 0%, #003ec5 70%);
 }
@@ -36,7 +36,7 @@
 
 .roadmap-card {
   max-width: 521px;
-  min-height: 612px;
+  min-height: 640px;
   padding: 50px 77px 50px 77px;
   border-radius: 20px;
   border: 2px;
