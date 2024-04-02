@@ -1,6 +1,6 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
-import { Container } from 'reactstrap';
+import { Container, UncontrolledCarousel } from 'reactstrap';
 
 import './gaming.css';
 
@@ -11,8 +11,22 @@ import frame from '../../assets/images/Frame.png';
 import rect1 from '../../assets/images/rect-1.png';
 import rect2 from '../../assets/images/rect-2.png';
 import rect3 from '../../assets/images/rect-3.png';
-import pad from '../../assets/images/game-pad.png';
 import virtual from '../../assets/images/virtual.png';
+
+const items = [
+  {
+    key: 1,
+    src: rect1,
+  },
+  {
+    key: 2,
+    src: rect2,
+  },
+  {
+    key: 3,
+    src: rect3,
+  },
+];
 
 function Gaming() {
   return (
@@ -33,7 +47,11 @@ function Gaming() {
                 data-wow-duration="1s"
                 data-wow-delay="1.5s"
               >
-                Level up your gaming experience with Plutos! Partnering with leading game companies, we&apos;re making gaming not only entertaining but also highly rewarding through in-game purchases, rewards, and transactions using Plutos tokens across your favorite games and virtual worlds. {' '}
+                Level up your gaming experience with Plutos! Partnering with
+                leading game companies, we&apos;re making gaming not only
+                entertaining but also highly rewarding through in-game
+                purchases, rewards, and transactions using Plutos tokens across
+                your favorite games and virtual worlds.{' '}
               </h6>
               <div className="get-sterted mt-5">
                 <Link
@@ -42,9 +60,9 @@ function Gaming() {
                 >
                   Demo
                 </Link>
-                  <Link className=" more-btn" target="_blank">
-                    Learn More
-                  </Link>
+                <Link className=" more-btn" target="_blank">
+                  Learn More
+                </Link>
               </div>
             </div>
             <div className="gaming-header-right">
@@ -55,28 +73,7 @@ function Gaming() {
           </div>
           <div className="gaming-images">
             <div className="left">
-              <div
-                className="rect-1 wow fadeInDown"
-                data-wow-duration="1s"
-                data-wow-delay="1s"
-              >
-                <img src={rect1} alt="Games" />
-              </div>
-              <div
-                className="rect-2 wow fadeInDown"
-                data-wow-duration="1s"
-                data-wow-delay="1.5s"
-              >
-                <img src={rect2} alt="Games" />
-              </div>
-              <div
-                className="rect-3 wow fadeInUp"
-                data-wow-duration="1s"
-                data-wow-delay="3.5s"
-              >
-                <img src={rect3} alt="Games" />
-                <img className="game-pad" src={pad} alt="Game Pad" />
-              </div>
+              <UncontrolledCarousel items={items} />
             </div>
             <div
               className="gaming-virtual  wow fadeInRight"
