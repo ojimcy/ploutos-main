@@ -70,23 +70,23 @@
 }
 
 .tokenomics-list li:nth-child(2):before {
-  background-color: #026dff;
+  background: #001e5f;
 }
 
 .tokenomics-list li:nth-child(3):before {
-  background-color: #5d8ef9;
+  background: #5d8ef9;
 }
 .tokenomics-list li:nth-child(4):before {
-  background-color: #fdb500;
+  background: #026dff;
 }
 .tokenomics-list li:nth-child(5):before {
-  background-color: #13005f;
+  background: #000000;
 }
 .tokenomics-list li:nth-child(6):before {
-  background-color: #001e5f;
+  background: #fdb500;
 }
 .tokenomics-list li:nth-child(7):before {
-  background-color: #011236;
+  background: #8ac9f9;
 }
 
 @media (min-width: 993px) {

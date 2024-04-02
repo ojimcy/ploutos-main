@@ -17,13 +17,13 @@ export default function About() {
             </div>
             <Row className="align-items-center justify-content-center">
               <Col lg={6}>
-                <div className="about-img wow fadeInLeft" data-wow-delay=".5s">
+                <div className="about-img wow fadeInUp" data-wow-delay="1s">
                   <img src={about} alt="about" />
                 </div>
               </Col>
               <Col lg={6}>
                 <div
-                  className="about-content wow fadeInRight"
+                  className="about-content wow fadeInUp"
                   data-wow-delay="1s"
                 >
                   <div className="about-text">
