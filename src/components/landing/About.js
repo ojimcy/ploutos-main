@@ -22,10 +22,7 @@ export default function About() {
                 </div>
               </Col>
               <Col lg={6}>
-                <div
-                  className="about-content wow fadeInUp"
-                  data-wow-delay="1s"
-                >
+                <div className="about-content wow fadeInUp" data-wow-delay="1s">
                   <div className="about-text">
                     <p>
                       PLOUTOS is more than just a cryptocurrency; its a
@@ -48,10 +45,13 @@ export default function About() {
                       <li>Join us in revolutionizing the crypto space.</li>
                     </ul>
 
-                    <Link className="about-btn" to="/assets/white-paper.pdf">
+                    <Link
+                      className="about-btn"
+                      to="https://ploutoslabs.gitbook.io/ploutos-white-paper"
+                      target="_blank"
+                    >
                       Learn More
                     </Link>
-
                   </div>
                 </div>
               </Col>

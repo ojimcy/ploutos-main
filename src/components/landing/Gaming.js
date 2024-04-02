@@ -60,7 +60,11 @@ function Gaming() {
                 >
                   Demo
                 </Link>
-                <Link className=" more-btn" target="_blank">
+                <Link
+                  className="more-btn"
+                  target="_blank"
+                  to="https://ploutoslabs.gitbook.io/ploutos-white-paper/use-cases"
+                >
                   Learn More
                 </Link>
               </div>

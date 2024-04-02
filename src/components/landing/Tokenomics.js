@@ -14,7 +14,7 @@ function Tokenomics() {
             <div className="title">
               <h2>Tokenomics</h2>
             </div>
-            <div className="sub-title">
+            <div className="sub-title mt-3">
               <h6>
                 Explore the token distribution model and understand how PLOUTOS
                 ensures fairness, stability, and long-term value for its
@@ -22,8 +22,7 @@ function Tokenomics() {
               </h6>
             </div>
           </div>
-
-          <Row>
+          <Row className="mt-5 justify-content-center align-items-center">
             <Col sm={12} md={6}>
               <div className="details">
                 <ul className="tokenomics-list">

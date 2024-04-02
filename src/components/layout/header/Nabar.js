@@ -8,8 +8,6 @@ import MobileMenu from '../../navs/MobileNav';
 
 import logo from '../../../assets/images/logo.png';
 
-import whitePaper from '../../../assets/white-paper.pdf';
-
 function MainNavigation() {
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
   const [isTableMenuOpen, setIsTableMenuOpen] = useState(false);
@@ -127,8 +125,9 @@ function MainNavigation() {
                 </Link>
                 <a
                   className={`nav-link mr-1 }`}
-                  href={whitePaper}
-                  target="_blank" rel="noreferrer"
+                  href="https://ploutoslabs.gitbook.io/ploutos-white-paper"
+                  target="_blank"
+                  rel="noreferrer"
                 >
                   White paper
                 </a>
