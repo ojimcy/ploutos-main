@@ -1,11 +1,11 @@
 .main-dashboard {
   display: flex;
-  height: 100vh;
   overflow: hidden;
   position: relative;
-  padding-top: 4rem;
+  padding-top: 10rem;
   padding-bottom: 165px;
   flex-direction: column;
+  color: #fff;
 }
 
 .main-content-background {
@@ -172,51 +172,6 @@
   color: #fff;
 }
 
-@media screen and (max-width: 768px) {
-  .header {
-    padding: 0px 0px 0 3.563rem;
-  }
-  .nav-header {
-    width: 9.75rem;
-    background-color: #fff;
-  }
-
-  .sidebar-main {
-    width: 15.75rem;
-  }
-
-  .sidebar-main .menu-list > li {
-    padding: 0;
-  }
-  .header-left .dashboard_bar {
-    font-size: 1.15rem;
-  }
-
-  .main-dashboard {
-    padding: 0 1rem;
-  }
-
-  .p-card {
-    padding: 0;
-  }
-  .p-card .user-info span {
-    font-size: 15px;
-  }
-
-  .earnings .section-title {
-    flex-direction: column;
-  }
-
-  .earnings-pills {
-    margin-top: 1rem;
-  }
-
-  .nav-header .brand-logo {
-    padding-left: 0;
-    padding-right: 0;
-  }
-}
-
 .amount-card {
   background-color: #f4f2f8;
   padding: 2rem;
@@ -252,7 +207,7 @@
   line-height: 1.2;
   margin-bottom: 28px;
   font-size: 1.25rem;
-  color: #00ffd1;
+  color: #ffca45;
 }
 
 .points-card .amount {
@@ -389,4 +344,125 @@
   border-radius: 15px;
   border: 1px solid rgba(255, 255, 255, 0.2);
   box-shadow: rgba(117, 230, 255, 0.34) 0px 0px 50px 0px;
+}
+
+.social-activities .activity-card {
+  position: relative;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  border-radius: 40px;
+  background: radial-gradient(
+    107.32% 141.42% at 0% 0%,
+    #ffffff3d 0%,
+    #fff0 100%
+  );
+}
+
+.social-activities .activity-card .activity-point {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  width: 140px;
+  background: linear-gradient(132deg, #00132566 -13.69%, #00132599 106.43%);
+  border-radius: 40px 0 0 40px;
+}
+
+.activity-content {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  gap: 24px;
+  width: calc(100% - 140px);
+  padding: 40px 20px;
+  border-radius: 0 25px 25px 0;
+  height: 100%;
+  min-height: 130px;
+}
+
+.airdrop-btn {
+  min-width: 130px;
+  height: unset !important;
+  font-size: 1.25rem;
+  font-weight: 700;
+  line-height: 0.72;
+  text-align: center;
+  border-radius: 17px;
+  padding: 18px;
+  border: 1px solid #ffca45;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-decoration: none;
+  color: #ffffff;
+}
+
+@media screen and (max-width: 768px) {
+  .header {
+    padding: 0px 0px 0 3.563rem;
+  }
+  .nav-header {
+    width: 9.75rem;
+    background-color: #fff;
+  }
+
+  .sidebar-main {
+    width: 15.75rem;
+  }
+
+  .sidebar-main .menu-list > li {
+    padding: 0;
+  }
+  .header-left .dashboard_bar {
+    font-size: 1.15rem;
+  }
+
+  .main-dashboard {
+    padding: 25px 0;
+  }
+
+  .p-card {
+    padding: 0;
+  }
+  .p-card .user-info span {
+    font-size: 15px;
+  }
+
+  .earnings .section-title {
+    flex-direction: column;
+  }
+
+  .earnings-pills {
+    margin-top: 1rem;
+  }
+
+  .nav-header .brand-logo {
+    padding-left: 0;
+    padding-right: 0;
+  }
+}
+
+@media screen and (max-width: 993px) {
+  .points-card {
+    padding: 6px 10px 14px;
+    border-radius: 10px;
+  }
+
+  .social-activities .activity-card {
+    flex-direction: column;
+  }
+
+  .social-activities .activity-card .activity-point {
+    width: 100%;
+  }
+
+  .social-activities .activity-card .activity-content {
+    width: 100%;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+  }
 }
