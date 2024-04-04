@@ -7,7 +7,7 @@ const History = ({ history }) => {
     <div className="history-table">
       <Row>
         <h3>Claim History</h3>
-        <Table striped>
+        <Table striped style={{ backgroundColor: 'transparent' }}>
           <thead>
             <tr>
               <th>#</th>

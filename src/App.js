@@ -28,7 +28,7 @@ const App = () => {
           }
         />
         <Route
-          path="/app/*"
+          path="/dashboard/*"
           element={
             <DashboardLayout>
               <Routes>

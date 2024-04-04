@@ -36,7 +36,7 @@
 }
 
 .navbar-right .nav-link.active {
-  color: gold !important;
+  color: #ffffff !important;
 }
 
 .navbar-right .nav-link:hover {
@@ -80,7 +80,7 @@
 }
 
 .scrolled .navbar-right .nav-link.active {
-  color: gold !important;
+  color: #ffffff !important;
 }
 
 .scrolled .navbar-right .nav-link:hover {
