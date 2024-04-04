@@ -1,5 +1,6 @@
 import React from 'react';
 import { Col, Row } from 'reactstrap';
+import Tasks from './Tasks';
 
 // import icon from '../../assets/images/icon.png';
 import HistoryTable from './HistoryTable';
@@ -7,6 +8,19 @@ import HistoryTable from './HistoryTable';
 const hist = [
   { date: '2024-03-10', amount: '500 PLT' },
   { date: '2024-03-11', amount: '750 PLT' },
+];
+
+const tasks = [
+  {
+    reward: '1500',
+    title: 'Referral tasks',
+    info: 'Earn 50 PLT for each successfull referral!!',
+  },
+  {
+    reward: '200',
+    title: 'Telegram tasks',
+    info: 'Follow @Ploutus group',
+  },
 ];
 
 function MainDashboard() {
@@ -17,7 +31,7 @@ function MainDashboard() {
           <Col className="mb-3" md="4" sm="12">
             <div className="points-card">
               <div className="label">
-                <span>Presale</span>
+                <span>Total Staking</span>
               </div>
               <div className="amount">
                 <span>15000</span>
@@ -44,6 +58,10 @@ function MainDashboard() {
               </div>
             </div>
           </Col>
+        </Row>
+
+        <Row>
+          <Tasks tasks={tasks}/>
         </Row>
 
         <div className="history">
