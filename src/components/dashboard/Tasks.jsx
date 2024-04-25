@@ -22,7 +22,11 @@ function Tasks({ tasks }) {
                   <p>{task.info}</p>
                 </div>
                 <div className="airdrop-link">
-                  <Link className="airdrop-btn" to="#">
+                  <Link
+                    className="dashboard-btn airdrop-btn"
+                    target="_blank"
+                    to={task.link}
+                  >
                     Go
                   </Link>
                 </div>
