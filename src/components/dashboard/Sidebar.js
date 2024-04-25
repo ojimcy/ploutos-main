@@ -1,10 +1,9 @@
 import React, { useState, useEffect } from 'react';
-import { Link  } from 'react-router-dom';
-import { FaBars,   FaTimes, FaWallet } from 'react-icons/fa';
+import { Link } from 'react-router-dom';
+import { FaBars, FaTimes, FaWallet } from 'react-icons/fa';
 import logo from '../../assets/images/logo.png';
 import './dashboard.css';
 import {
-  Button,
   DropdownItem,
   DropdownMenu,
   DropdownToggle,
@@ -15,6 +14,7 @@ export default function Sidebar() {
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
   const [isMobileDevice, setIsMobileDevice] = useState(false);
   const [walletAddress, setWalletAddress] = useState('');
+  const [loginOption, setLoginOption] = useState('');
 
   const toggleMobileMenu = () => {
     setIsMobileMenuOpen(!isMobileMenuOpen);
@@ -34,16 +34,25 @@ export default function Sidebar() {
     };
   }, []);
 
-
   const connectWallet = () => {
     // Logic to connect the wallet and retrieve the address
-    const address = '0x1234567890abcdef1234567890abcdef12345678'; 
+    const address = '0x1234567890abcdef1234567890abcdef12345678';
     setWalletAddress(address);
   };
 
   const disconnectWallet = () => {
     setWalletAddress('');
   };
+
+  const handleLoginOptionChange = (option) => {
+    setLoginOption(option);
+  };
+
+  useEffect(() => {
+    if (loginOption === 'wallet') {
+      connectWallet();
+    }
+  }, [loginOption]);
 
   return (
     <>
@@ -72,12 +81,19 @@ export default function Sidebar() {
                     <div className="header-profile">
                       <UncontrolledDropdown>
                         <DropdownToggle className="p-0" color="empty">
-                          <Button color="success"><FaWallet /> {`${walletAddress.substring(
-                            0,
-                            6
-                          )}...${walletAddress.substring(
-                            walletAddress.length - 4
-                          )}`}</Button>
+                          <Link
+                            to="#"
+                            className="dashboard-btn connect-btn"
+                            onClick={connectWallet}
+                          >
+                            <FaWallet />{' '}
+                            {`${walletAddress.substring(
+                              0,
+                              6
+                            )}...${walletAddress.substring(
+                              walletAddress.length - 4
+                            )}`}
+                          </Link>
                         </DropdownToggle>
                         <DropdownMenu className="mt-3" end>
                           <DropdownItem onClick={disconnectWallet}>
@@ -87,9 +103,25 @@ export default function Sidebar() {
                       </UncontrolledDropdown>
                     </div>
                   ) : (
-                    <Button color="success" onClick={connectWallet}>
-                      Connect Wallet
-                    </Button>
+                    <UncontrolledDropdown>
+                      <DropdownToggle className="p-0" color="empty">
+                        <Link to="#" className="dashboard-btn connect-btn">
+                          Login{' '}
+                        </Link>
+                      </DropdownToggle>
+                      <DropdownMenu className="mt-3" end>
+                        <DropdownItem
+                          onClick={() => handleLoginOptionChange('wallet')}
+                        >
+                          Connect Wallet
+                        </DropdownItem>
+                        <DropdownItem
+                          onClick={() => handleLoginOptionChange('telegram')}
+                        >
+                          Login with Telegram
+                        </DropdownItem>
+                      </DropdownMenu>
+                    </UncontrolledDropdown>
                   )}
                 </div>
               </div>

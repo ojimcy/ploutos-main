@@ -383,21 +383,41 @@
   min-height: 130px;
 }
 
-.airdrop-btn {
+.dashboard-btn {
   min-width: 130px;
   height: unset !important;
   font-size: 1.25rem;
-  font-weight: 700;
-  line-height: 0.72;
   text-align: center;
   border-radius: 17px;
   padding: 18px;
-  border: 1px solid #ffca45;
   display: flex;
   align-items: center;
   justify-content: center;
   text-decoration: none;
+}
+
+.airdrop-btn {
   color: #ffffff;
+  font-weight: 700;
+  line-height: 0.72;
+  border: 1px solid #ffca45;
+}
+.claim-btn {
+  color: #ffffff;
+  font-weight: 400;
+  line-height: 0.72;
+  border: 1px solid #ff00d6;
+  margin-left: 10px;
+  max-width: 90px !important;
+}
+
+.connect-btn {
+  font-family: filson-soft, sans-serif;
+  font-weight: 400 !important;
+  line-height: 1 !important;
+  border: 2px solid #001e5f;
+  background: transparent !important;
+  color: #001e5f !important;
 }
 
 @media screen and (max-width: 768px) {

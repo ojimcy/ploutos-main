@@ -1,11 +1,6 @@
 import React from 'react';
 import { Col, Container, Row } from 'reactstrap';
-import {
-  FaFacebookF,
-  FaInstagram,
-  FaLinkedin,
-  FaTwitter,
-} from 'react-icons/fa';
+import { FaTwitter, FaTelegram } from 'react-icons/fa';
 import { Link } from 'react-router-dom';
 
 import './Footer.css';
@@ -32,25 +27,7 @@ function Footer() {
                   <ul className="footer-social">
                     <li>
                       <Link
-                        to="https://www.linkedin.com/in/millionaire-circle-23320527b"
-                        target="_blank"
-                        rel="noopener noreferrer"
-                      >
-                        <FaLinkedin />
-                      </Link>
-                    </li>
-                    <li>
-                      <Link
-                        to="https://www.facebook.com/profile.php?id=100093244977134"
-                        target="_blank"
-                        rel="noopener noreferrer"
-                      >
-                        <FaFacebookF />
-                      </Link>
-                    </li>
-                    <li>
-                      <Link
-                        to="#"
+                        to="https://twitter.com/MillionaireMCGP?t=_HFpwFhxH35ASuLC_BnWpA&s=09"
                         target="_blank"
                         rel="noopener noreferrer"
                       >
@@ -59,11 +36,11 @@ function Footer() {
                     </li>
                     <li>
                       <Link
-                        to="#"
+                        to="https://www.youtube.com/@MillionaireCircle-MCGP"
                         target="_blank"
                         rel="noopener noreferrer"
                       >
-                        <FaInstagram />
+                        <FaTelegram />
                       </Link>
                     </li>
                   </ul>

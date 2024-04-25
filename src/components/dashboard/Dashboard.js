@@ -4,6 +4,7 @@ import Tasks from './Tasks';
 
 // import icon from '../../assets/images/icon.png';
 import HistoryTable from './HistoryTable';
+import { Link } from 'react-router-dom';
 
 const hist = [
   { date: '2024-03-10', amount: '500 PLT' },
@@ -15,11 +16,13 @@ const tasks = [
     reward: '1500',
     title: 'Referral tasks',
     info: 'Earn 50 PLT for each successfull referral!!',
+    link: '#',
   },
   {
     reward: '200',
     title: 'Telegram tasks',
-    info: 'Follow @Ploutus group',
+    info: 'Follow @Ploutos group',
+    link: 'https://t.me/notcoin_bot?start=r_574113_11097614',
   },
 ];
 
@@ -54,14 +57,23 @@ function MainDashboard() {
                 <span>Available Balance</span>
               </div>
               <div className="amount">
-                <span>1500</span>
+                <span className='d-flex'>
+                  1500
+                  <Link
+                    className="dashboard-btn claim-btn"
+                    target="_blank"
+                    to="#"
+                  >
+                    Claim
+                  </Link>
+                </span>
               </div>
             </div>
           </Col>
         </Row>
 
         <Row>
-          <Tasks tasks={tasks}/>
+          <Tasks tasks={tasks} />
         </Row>
 
         <div className="history">
