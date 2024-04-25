@@ -1,5 +1,5 @@
 {
-  "name": "millionaire-circle",
+  "name": "ploutos",
   "version": "0.1.0",
   "private": true,
   "dependencies": {
@@ -37,7 +37,7 @@
   "scripts": {
     "start": "react-scripts start",
     "build": "react-scripts build",
-    "deploy:prod": "aws s3 sync build/ s3://www.millionairecgp.com",
+    "deploy:prod": "aws s3 sync build/ s3://www.ploutos.com",
     "test": "react-scripts test",
     "eject": "react-scripts eject"
   },

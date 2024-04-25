@@ -4,9 +4,7 @@ import {
   FaFacebookF,
   FaInstagram,
   FaLinkedin,
-  FaTiktok,
   FaTwitter,
-  FaYoutube,
 } from 'react-icons/fa';
 import { Link } from 'react-router-dom';
 
@@ -52,7 +50,7 @@ function Footer() {
                     </li>
                     <li>
                       <Link
-                        to="https://twitter.com/MillionaireMCGP?t=_HFpwFhxH35ASuLC_BnWpA&s=09"
+                        to="#"
                         target="_blank"
                         rel="noopener noreferrer"
                       >
@@ -61,29 +59,11 @@ function Footer() {
                     </li>
                     <li>
                       <Link
-                        to="tiktok.com/@Millionaire_Circle"
-                        target="_blank"
-                        rel="noopener noreferrer"
-                      >
-                        <FaTiktok />
-                      </Link>
-                    </li>
-                    <li>
-                      <Link
-                        to="https://instagram.com/millionaire_circle1?igshid=ZGUzMzM3NWJiOQ=="
+                        to="#"
                         target="_blank"
                         rel="noopener noreferrer"
                       >
                         <FaInstagram />
-                      </Link>
-                    </li>
-                    <li>
-                      <Link
-                        to="https://www.youtube.com/@MillionaireCircle-MCGP"
-                        target="_blank"
-                        rel="noopener noreferrer"
-                      >
-                        <FaYoutube />
                       </Link>
                     </li>
                   </ul>

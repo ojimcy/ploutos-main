@@ -71,12 +71,12 @@ function MainNavigation() {
   };
 
   const isNavLinkActive = (path) => {
-    // Check if both path and activeTab are exactly '/'
+    // Check if it's the home link
     if (path === '/' && activeTab === '/') {
       return 'active';
     }
     // For other paths, use the comparison with activeTab
-    return activeTab === path ? 'active' : '';
+    return activeTab.startsWith(path) ? 'active' : '';
   };
 
   return (
@@ -122,6 +122,13 @@ function MainNavigation() {
                   onClick={() => scrollToSection('roadmap')}
                 >
                   Roadmap
+                </Link>
+                <Link
+                  className={`nav-link mr-1 ${isNavLinkActive('/#features')}`}
+                  to="/#features"
+                  onClick={() => scrollToSection('features')}
+                >
+                  Features
                 </Link>
                 <a
                   className={`nav-link mr-1 }`}

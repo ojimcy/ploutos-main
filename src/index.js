@@ -2,12 +2,12 @@ import React from 'react';
 import ReactDOM from 'react-dom/client';
 
 import { ToastContainer } from 'react-toastify';
-import './index.css';
 import '../src/assets/css/animate.min.css';
 import App from './App';
 
 import 'bootstrap/dist/css/bootstrap.min.css';
 import 'react-toastify/dist/ReactToastify.css';
+import './index.css';
 
 import { AppProvider } from './context';
 import { AuthProvider } from './contexts/AuthContext';
