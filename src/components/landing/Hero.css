@@ -1,5 +1,5 @@
 .hero {
-  height: 100vh;
+  /* height: 100vh; */
   display: flex;
   justify-content: center;
   align-items: center;
@@ -239,6 +239,11 @@
   }
 }
 
+@media screen and (min-width: 769px) {
+  .hero {
+    padding-top: 140px !important;}
+}
+
 @media screen and (max-width: 993px) {
   .hero {
     padding-top: 135px;
@@ -256,10 +261,14 @@
     line-height: 30px;
   }
 
+  .banner-img {
+    margin-top: 35px;
+  }
+
   .button-wrapper {
     grid-row-gap: 15px;
     flex-direction: column;
-    align-items: flex-start;
+    align-items: center;
   }
 }
 

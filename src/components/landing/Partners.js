@@ -1,5 +1,4 @@
 import React from 'react';
-import { Container } from 'reactstrap';
 
 import './partners.css';
 
@@ -8,29 +7,32 @@ import partner2 from '../../assets/images/cmc.png';
 import partner3 from '../../assets/images/coingecko.png';
 import partner4 from '../../assets/images/cyberscope.png';
 
-const partners = [partner1, partner2, partner3, partner4];
 const Partner = () => {
+  // Array of partner logos
+  const partnerLogos = [partner1, partner2, partner3, partner4];
+
+  // Function to render list items dynamically
+  const renderPartnerLogos = () => {
+    // Duplicate partner logos for continuous view
+    const duplicatedPartnerLogos = [...partnerLogos, ...partnerLogos];
+
+    // Map through duplicated logos and render list items
+    return duplicatedPartnerLogos.map((logo, index) => (
+      <li key={index}>
+        <img src={logo} alt={``} className="partner-logo" />
+      </li>
+    ));
+  };
+
   return (
-    <section id="partner" className="partner-section">
-      <Container>
-        <div className="partner-inner">
-          <div className="partner-title">
-            <h3 className="sup-title">Our Partners</h3>
-            <h2 className="title">Trusted by Top Companies</h2>
-            <h6 className="sub-title">Explore our partners and Exchanges</h6>
-          </div>
-          <div className="partner-logos">
-            {partners.map((partner, index) => (
-              <img
-                key={index}
-                src={partner}
-                alt={`Partner ${index + 1}`}
-                className="partner-logo"
-              />
-            ))}
-          </div>
+    <section className="partner-section">
+      <div className="marquee-wrapper">
+        <div className="marquee">
+          <ul>
+            {renderPartnerLogos()} {/* Render list items dynamically */}
+          </ul>
         </div>
-      </Container>
+      </div>
     </section>
   );
 };

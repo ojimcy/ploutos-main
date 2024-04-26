@@ -11,8 +11,8 @@ export default function Home() {
   return (
     <>
       <Hero />
-      <About />
       <Partner />
+      <About />
       <Tokenomics />
       <Features />
       <Gaming />
