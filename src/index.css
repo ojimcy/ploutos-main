@@ -9,6 +9,20 @@ body {
   overflow: visible;
 }
 
+p {
+  color: rgba(255, 255, 255, 0.8);
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: Chakra Petch, sans-serif;
+  font-weight: 700;
+}
+
 img,
 .img {
   max-width: 100%;
@@ -230,7 +244,6 @@ section {
   background-position: center;
 }
 
-
 .auth-bg {
   /* background: url(../src/assets/images/bg/bg-auth.jpg) rgb(255, 255, 255); */
   height: 100vh;
@@ -304,7 +317,6 @@ section {
 .hiwImg {
   width: 80%;
 }
-
 
 @media screen and (max-width: 1024) {
   .section {

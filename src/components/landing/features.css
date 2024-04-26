@@ -1,5 +1,11 @@
 .features-section {
-  padding: 60px 0;
+  grid-column-gap: 30px;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: stretch;
+  padding-top: 200px;
+  display: flex;
+  position: relative;
 }
 
 .features-wrapper {
@@ -8,44 +14,85 @@
 
 .features-header {
   margin-bottom: 40px;
-}
-
-.features-header h2 {
-  font-size: 36px;
-  font-weight: bold;
-  color: #001e5f;
+  grid-row-gap: 18px;
+  flex-direction: column;
+  display: flex;
 }
 
 .features-header p {
+  max-width: 480px;
+  text-align: left;
+}
+
+.features-header h2 {
+  margin-top: 0;
+  margin-bottom: 0;
+  font-size: 46px;
+  line-height: 60px;
+  text-align: left;
+}
+
+.features-card-header h4 {
+  text-align: left;
+  font-size: 20px;
+  line-height: 30px;
+}
+
+.features-card p {
   font-size: 16px;
   font-weight: 400;
   line-height: 18.32px;
+  max-width: 480px;
+  margin-bottom: 0;
+  text-align: left;
 }
 
-.feature-card {
-  background-color: #fff;
-  border-radius: 10px;
-  padding: 30px;
-  /* width: 367px; */
-  min-height: 360px;
-  border-radius: 15px;
-  border: 0.5px solid #001e5f;
+.feature-cards {
+  grid-row-gap: 24px;
 }
 
-.feature-card img {
-  max-width: 100%;
-  height: auto;
+/* responsive */
+/* For small devices (e.g., phones) */
+@media (max-width: 576px) {
 }
 
-.feature-card h4 {
-  font-size: 22px;
-  font-weight: bold;
-  color: #001e5f;
-  margin-top: 15px;
+/* For medium devices (e.g., tablets) */
+@media (min-width: 577px) and (max-width: 768px) {
 }
 
-.feature-card p {
-  font-size: 16px;
-  line-height: 1.6;
-  color: #333;
+/* For large devices (e.g., laptops, desktops) */
+@media (min-width: 769px) and (max-width: 992px) {
+}
+
+@media screen and (min-width: 769px) {
+}
+
+@media screen and (max-width: 993px) {
+  .features-header p {
+    text-align: center;
+  }
+
+  .features-header h2 {
+    text-align: center;
+  }
+
+  .features-card-header h4 {
+    text-align: center;
+  }
+
+  .features-card p {
+    text-align: center;
+  }
+
+  .feature-cards {
+    grid-row-gap: 34px;
+  }
+}
+
+/* For extra large devices (e.g., large desktops) */
+@media (min-width: 1200px) {
+  .features-img img {
+    position: relative;
+    right: -45%;
+  }
 }

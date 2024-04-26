@@ -1,5 +1,5 @@
 .marquee-wrapper {
-  width: 200vw;
+  width: 100vw;
   transform: translate(-100vw) rotate(5deg);
   background-color: #30aca6;
   height: 93px;
