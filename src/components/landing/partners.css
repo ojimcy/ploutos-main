@@ -1,5 +1,5 @@
 .marquee-wrapper {
-  width: 100vw;
+  width: 200vw;
   transform: translate(-100vw) rotate(5deg);
   background-color: #30aca6;
   height: 93px;
@@ -52,6 +52,7 @@
 
 @media screen and (max-width: 769px) {
   .marquee-wrapper {
+    width: 100vw;
     transform: translate(0) rotate(0);
     height: 73px;
     margin-top: 35px;

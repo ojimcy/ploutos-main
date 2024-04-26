@@ -43,8 +43,13 @@ function MainNavigation() {
 
   useEffect(() => {
     // Determine the active tab based on the current location
-    const currentPath = location.pathname;
-    setActiveTab(currentPath);
+    // const currentPath = location.pathname;
+    let path = location.hash;
+    if (path == '') path = '/';
+    if (path.indexOf('#') > -1) {
+      path = '/#' + path.split('#')[1];
+    }
+    setActiveTab(path);
   }, [location]);
 
   useEffect(() => {
@@ -76,7 +81,7 @@ function MainNavigation() {
       return 'active';
     }
     // For other paths, use the comparison with activeTab
-    return activeTab.startsWith(path) ? 'active' : '';
+    return activeTab === path ? 'active' : '';
   };
 
   return (
@@ -94,7 +99,11 @@ function MainNavigation() {
       >
         <Container className="d-flex justify-content-between align-items-center">
           {/* Logo */}
-          <Link to="/" className="navbar-logo">
+          <Link
+            to="/"
+            className="navbar-logo"
+            onClick={() => scrollToSection('home')}
+          >
             <img src={logo} alt="logo" />
           </Link>
 
@@ -106,6 +115,7 @@ function MainNavigation() {
                 <Link
                   className={`nav-link mr-1 ${isNavLinkActive('/')}`}
                   to="/"
+                  onClick={() => scrollToSection('home')}
                 >
                   Home
                 </Link>

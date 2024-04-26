@@ -14,7 +14,17 @@ const Partner = () => {
   // Function to render list items dynamically
   const renderPartnerLogos = () => {
     // Duplicate partner logos for continuous view
-    const duplicatedPartnerLogos = [...partnerLogos, ...partnerLogos];
+    const duplicatedPartnerLogos = [
+      ...partnerLogos,
+      ...partnerLogos,
+      ...partnerLogos,
+      ...partnerLogos,
+      ...partnerLogos,
+      ...partnerLogos,
+      ...partnerLogos,
+      ...partnerLogos,
+      ...partnerLogos,
+    ];
 
     // Map through duplicated logos and render list items
     return duplicatedPartnerLogos.map((logo, index) => (

@@ -7,7 +7,7 @@ import './Hero.css';
 
 export default function Hero() {
   return (
-    <div className="hero">
+    <div className="hero" id='home'>
       <Container>
         <Row className="align-items-center">
           <Col

@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useEffect } from 'react';
 import { Col, Container, Row } from 'reactstrap';
 
 import './about.css';
@@ -8,6 +8,16 @@ import aboutVideo from '../../assets/images/plt-vid.mp4';
 import { Link } from 'react-router-dom';
 
 export default function About() {
+  useEffect(() => {
+    try {
+      const media = document.querySelector('video');
+      if (!media) return;
+      media.play();
+    } catch (err) {
+      // ignore
+    }
+  });
+
   return (
     <>
       <section id="about" className="section-wrapper">
@@ -68,7 +78,7 @@ export default function About() {
                   <div className="blur-background middle"></div>
 
                   <div className="video-wrapper">
-                    <video width="100%" autoPlay controls>
+                    <video width="100%" autoPlay loop muted>
                       <source src={aboutVideo} type="video/mp4" />
                       Your browser does not support the video tag.
                     </video>
