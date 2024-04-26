@@ -53,15 +53,12 @@ function Gaming() {
                 purchases, rewards, and transactions using Plutos tokens across
                 your favorite games and virtual worlds.{' '}
               </p>
-              <div className="get-sterted mt-5 mb-5">
-                <Link
-                  className="btn btn-primary hero-btn btn-gradient btn-shadow"
-                  to="/gaming"
-                >
+              <div className="get-sterted mt-5 d-flex flex-row justify-content-around">
+                <Link className="hero-btn get-started-btn" to="/gaming">
                   Demo
                 </Link>
                 <Link
-                  className="more-btn mt-5 mb-5"
+                  className="hero-btn paper-btn"
                   target="_blank"
                   to="https://ploutoslabs.gitbook.io/ploutos-white-paper/use-cases"
                 >
