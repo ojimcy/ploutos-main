@@ -18,15 +18,6 @@
   position: relative;
 }
 
-.blur-background {
-  position: absolute;
-  width: 100%;
-  height: 100%;
-  top: 0;
-  left: 0;
-  background-color: rgba(26, 78, 220, 0.5);
-  filter: blur(50px);
-}
 
 .hero-content h1 {
   transform: translate3d(0px, 0px, 0px) scale3d(1, 1, 1) rotateX(0deg)

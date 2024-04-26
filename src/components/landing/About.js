@@ -3,7 +3,8 @@ import { Col, Container, Row } from 'reactstrap';
 
 import './about.css';
 
-import about from '../../assets/images/about-img.png';
+import about from '../../assets/images/discover.png';
+import aboutVideo from '../../assets/images/plt-vid.mp4';
 import { Link } from 'react-router-dom';
 
 export default function About() {
@@ -45,13 +46,32 @@ export default function About() {
                       <li>Join us in revolutionizing the crypto space.</li>
                     </ul>
 
-                    <Link
-                      className="about-btn"
-                      to="https://ploutoslabs.gitbook.io/ploutos-white-paper"
-                      target="_blank"
-                    >
-                      Learn More
-                    </Link>
+                    <div className="d-flex justify-content-center mt-5">
+                      <Link
+                        className="hero-btn paper-btn"
+                        to="https://ploutoslabs.gitbook.io/ploutos-white-paper"
+                        target="_blank"
+                      >
+                        Learn More
+                      </Link>
+                    </div>
+                  </div>
+                </div>
+              </Col>
+            </Row>
+            <Row className="mt-5">
+              <Col>
+                <div className="d-flex flex-column align-items-center justify-content-center about-video">
+                  <h3 className="section-head text-center">
+                    Experience the future of finance with Ploutos
+                  </h3>
+                  <div className="blur-background middle"></div>
+
+                  <div className="video-wrapper">
+                    <video width="100%" autoPlay controls>
+                      <source src={aboutVideo} type="video/mp4" />
+                      Your browser does not support the video tag.
+                    </video>
                   </div>
                 </div>
               </Col>

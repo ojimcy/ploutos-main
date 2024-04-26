@@ -523,6 +523,8 @@ section {
 .hiwImg {
   width: 80%;
 }
+
+
 @media screen and (max-width: 1024) {
   .section {
     padding: 40px 11px;
