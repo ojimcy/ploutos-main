@@ -1,163 +1,110 @@
 .hero {
-  display: flex;
   height: 100vh;
-  overflow: hidden;
-  position: relative;
+  display: flex;
   justify-content: center;
   align-items: center;
-  padding-bottom: 165px;
-  flex-direction: column;
+  padding: 0 15px;
 }
 
-.hero-main {
-  max-width: 1076px;
-  max-height: 660.87px;
+.banner-heading {
+  margin-bottom: 20px;
+}
+
+.banner-des {
+  padding-bottom: 20px;
+}
+
+.banner-img {
   position: relative;
-  padding-top: 104.57px;
 }
 
-.hero::before {
+.blur-background {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  background-color: rgba(26, 78, 220, 0.5);
+  filter: blur(50px);
+}
+
+.hero-content h1 {
+  transform: translate3d(0px, 0px, 0px) scale3d(1, 1, 1) rotateX(0deg)
+    rotateY(0deg) rotateZ(0deg) skew(0deg);
+  transform-style: preserve-3d;
+  margin-bottom: 10px;
+  font-family: Chakra Petch, sans-serif;
+  font-size: 50px;
+  font-weight: 700;
+  line-height: 66px;
+}
+
+.banner-des p {
+  font-weight: 300;
+  line-height: 26px;
+  font-family: Inter, sans-serif;
+  color: rgba(255, 255, 255, 0.8);
+}
+
+.button-wrapper {
+  grid-column-gap: 15px;
+  padding-top: 52px;
+  display: flex;
+  overflow: hidden;
+}
+
+.hero-btn {
+  color: #fff;
+  text-align: center;
+  border-radius: 5px;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  width: 150px;
+  height: 46px;
+  padding: 0;
+  font-family: Chakrapetch SemiBold;
+  display: flex;
+  position: relative;
+  overflow: hidden;
+  text-decoration: none;
+  transition: background-color 0.3s ease;
+  position: relative;
+}
+
+.hero-btn::before {
   content: '';
   position: absolute;
   top: 0;
   left: 0;
-  width: 100%;
-  height: 100%;
-  background: linear-gradient(180deg, #026dff 0%, #001e5f 78.5%);
-  opacity: 0.9;
-}
-
-.hero-background {
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  background-image: url(../../assets/images/hero-bg.png);
-  background-size: cover;
+  right: 0;
+  bottom: 0;
+  background: linear-gradient(
+    180deg,
+    rgba(0, 123, 255, 0.8) 0%,
+    transparent 100%
+  );
+  pointer-events: none;
   z-index: -1;
+  border-radius: inherit;
 }
 
-.hero-content {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  margin-top: 1.5rem;
-  z-index: 1;
+.get-started-btn {
+  background-color: #30aca6;
+  border: 2px solid #30aca6;
 }
 
-.main-title {
-  color: #fff;
-  margin-bottom: 32px;
-  position: relative;
-  text-transform: uppercase;
-  font-size: 81px;
-  font-weight: 700;
-  line-height: 81px;
-
-  height: 162px;
-}
-
-.content-title {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  opacity: 0;
-  animation: slideInAnimation 2s ease forwards;
-}
-
-@keyframes slideInAnimation {
-  from {
-    transform: translateY(-50px);
-    opacity: 0;
-  }
-  to {
-    transform: translateY(0);
-    opacity: 1;
-  }
-}
-
-.content-title p {
-  margin-bottom: 70px;
-
-  font-size: 20px;
-  font-weight: 500;
-  line-height: 22.9px;
-  color: #ffffff;
-  max-width: 776px;
-}
-
-.main-title span {
-  color: #0092ff;
-}
-
-.hero-btn {
-  padding: 14px 29px !important;
-  font-size: 18px !important;
-}
-
-.hero-img {
-  width: 130px;
-  position: absolute;
-  height: 135.94px;
-  opacity: 0; /* Initially set opacity to 0 */
-  animation: fadeInAnimation 3s ease forwards; /* Apply fadeInAnimation */
-}
-
-@keyframes fadeInAnimation {
-  from {
-    opacity: 0; /* Start from 0 opacity */
-  }
-  to {
-    opacity: 1; /* End at full opacity */
-  }
-}
-
-.img-1 {
-  top: 0px;
-  left: -3%;
-  animation-delay: 1s; /* No delay for the first image */
-}
-
-.img-2 {
-  top: 52%;
-  left: -5.4%;
-  animation-delay: 1.5s; /* Delay for the second image */
-}
-
-.img-3 {
-  top: 98%;
-  left: 10%;
-  animation-delay: 2s; /* Delay for the third image */
-}
-
-.img-4 {
-  top: 98%;
-  left: 91%;
-  animation-delay: 2.5s; /* Delay for the fourth image */
-}
-
-.img-5 {
-  top: 52%;
-  left: 95%;
-  animation-delay: 3s; /* Delay for the fifth image */
-}
-
-.img-6 {
-  top: 0;
-  left: 91%;
-  animation-delay: 3.5s; /* Delay for the sixth image */
+.get-started-btn:hover {
+  border-style: solid;
+  box-shadow: 0 0 20px rgba(255, 215, 0, 0.2);
+  border: 2px solid #30aca6;
+  background: transparent;
 }
 
 .paper-btn {
-  color: #ffffff !important;
-  border: #ffffff;
-  padding: 25px;
-  padding: 15px 25px 15px 25px !important;
-  margin-left: 25px !important;
-  border: 2px solid #ffffff;
-  text-decoration: none;
+  background-color: gold;
+  border: 2px solid gold;
+  color: #000;
 }
 
 .dropdown-link {
@@ -167,6 +114,47 @@
   font-size: 16px;
   line-height: 1;
   text-decoration: none;
+}
+
+.banner-img {
+  animation: MoveUpDown 3s linear infinite;
+  text-align: center;
+}
+@keyframes MoveUpDown {
+  0% {
+    position: relative;
+    top: 0;
+  }
+  50% {
+    position: relative;
+    top: 10px;
+  }
+  100% {
+    position: relative;
+    top: 0;
+  }
+}
+
+.blur-background {
+  z-index: -1;
+  filter: blur(100px);
+  background-color: rgba(26, 78, 220, 0.5);
+  width: 500px;
+  height: 500px;
+  position: absolute;
+  top: 14%;
+  bottom: auto;
+  left: 4%;
+  right: auto;
+}
+
+.bottom-right {
+  width: 500px;
+  height: 500px;
+  top: auto;
+  bottom: 4%;
+  left: auto;
+  right: 0%;
 }
 
 /* responsive */
@@ -187,6 +175,19 @@
   }
   .hero-main {
     padding-top: 0;
+  }
+
+  .hero {
+    grid-row-gap: 16px;
+    margin-top: 40px;
+  }
+
+  .hero-content {
+    order: 2;
+  }
+
+  .banner-img {
+    order: 1;
   }
 }
 
@@ -211,6 +212,14 @@
   .hero-main {
     padding-top: 0;
   }
+
+  .hero-content {
+    order: 2;
+  }
+
+  .banner-img {
+    order: 1;
+  }
 }
 
 /* For large devices (e.g., laptops, desktops) */
@@ -232,7 +241,25 @@
 
 @media screen and (max-width: 993px) {
   .hero {
-    padding-bottom: 0;
+    padding-top: 135px;
+    text-align: center;
+    grid-row-gap: 16px;
+    margin-top: 40px;
+  }
+
+  .hero-content h1 {
+    font-size: 36px;
+    line-height: 60px;
+  }
+
+  .hero-content p {
+    line-height: 30px;
+  }
+
+  .button-wrapper {
+    grid-row-gap: 15px;
+    flex-direction: column;
+    align-items: flex-start;
   }
 }
 

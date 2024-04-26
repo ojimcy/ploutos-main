@@ -27,7 +27,7 @@
   margin-left: 0;
   margin-right: 0;
   padding: 5px 0;
-  font-family: Chakra Petch, sans-serif;
+  font-family: Chakra Petch, sans-serif !important;
   font-size: 16px;
   font-weight: 600;
   line-height: 26px;
