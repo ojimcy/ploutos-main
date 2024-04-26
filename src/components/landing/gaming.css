@@ -1,3 +1,7 @@
+.gaming-section {
+  background: #f5f3f3;
+}
+
 .gaming-wrapper {
   height: auto;
   padding: 27px 2px 27px 74px;
@@ -36,7 +40,7 @@
   font-size: 16px;
   font-weight: 400;
   line-height: 18.32px;
-  color: #001e5f;
+  color: rgba(0, 30, 95, 0.8);
 }
 
 .gaming-images {

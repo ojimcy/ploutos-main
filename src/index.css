@@ -318,6 +318,63 @@ section {
   width: 80%;
 }
 
+.hero-btn {
+  color: #fff;
+  text-align: center;
+  border-radius: 5px;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  width: 150px;
+  height: 46px;
+  padding: 0;
+  font-family: Chakrapetch SemiBold;
+  display: flex;
+  position: relative;
+  overflow: hidden;
+  text-decoration: none;
+  transition: background-color 0.3s ease;
+  position: relative;
+}
+
+.hero-btn::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: linear-gradient(
+    180deg,
+    rgba(0, 123, 255, 0.8) 0%,
+    transparent 100%
+  );
+  pointer-events: none;
+  z-index: -1;
+  border-radius: inherit;
+}
+
+.get-started-btn {
+  background-color: #30aca6;
+  border: 2px solid #30aca6;
+}
+
+.get-started-btn:hover,
+.paper-btn:hover {
+  border-style: solid;
+  box-shadow: 0 0 20px rgba(255, 215, 0, 0.2);
+  border: 2px solid #30aca6;
+  background: transparent;
+  color: #000;
+
+}
+
+.paper-btn {
+  background-color: gold;
+  border: 2px solid gold;
+  color: #000;
+}
+
 @media screen and (max-width: 1024) {
   .section {
     padding: 40px 11px;

@@ -30,7 +30,7 @@ const items = [
 
 function Gaming() {
   return (
-    <section id="gaming" className="section-wrapper">
+    <section id="gaming" className="section-wrapper gaming-section">
       <Container>
         <div className="gaming-wrapper">
           <div className="gaming-header">
@@ -42,7 +42,7 @@ function Gaming() {
               >
                 Gaming Integrations
               </h2>
-              <h6
+              <p
                 className="wow fadeInUp"
                 data-wow-duration="1s"
                 data-wow-delay="1.5s"
@@ -52,16 +52,13 @@ function Gaming() {
                 entertaining but also highly rewarding through in-game
                 purchases, rewards, and transactions using Plutos tokens across
                 your favorite games and virtual worlds.{' '}
-              </h6>
-              <div className="get-sterted mt-5">
-                <Link
-                  className="btn btn-primary hero-btn btn-gradient btn-shadow"
-                  to="/gaming"
-                >
+              </p>
+              <div className="get-sterted mt-5 d-flex flex-row flex-wrap justify-content-around">
+                <Link className="hero-btn get-started-btn" to="/gaming">
                   Demo
                 </Link>
                 <Link
-                  className="more-btn"
+                  className="hero-btn paper-btn"
                   target="_blank"
                   to="https://ploutoslabs.gitbook.io/ploutos-white-paper/use-cases"
                 >
