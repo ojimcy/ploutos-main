@@ -3,7 +3,7 @@ import { Col, Container, Row } from 'reactstrap';
 
 import './about.css';
 
-import about from '../../assets/images/discover.png';
+import about from '../../assets/images/ploutos-dash.png';
 import aboutVideo from '../../assets/images/plt-vid.mp4';
 import { Link } from 'react-router-dom';
 

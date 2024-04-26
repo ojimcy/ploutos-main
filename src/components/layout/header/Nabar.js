@@ -6,7 +6,7 @@ import { Container, Nav, Navbar } from 'reactstrap';
 import { FaBars, FaTimes } from 'react-icons/fa';
 import MobileMenu from '../../navs/MobileNav';
 
-import logo from '../../../assets/images/logo.png';
+import logo from '../../../assets/images/logo-white.png';
 
 function MainNavigation() {
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
@@ -127,18 +127,18 @@ function MainNavigation() {
                   Tokenomics
                 </Link>
                 <Link
-                  className={`nav-link mr-1 ${isNavLinkActive('/#roadmap')}`}
-                  to="/#roadmap"
-                  onClick={() => scrollToSection('roadmap')}
-                >
-                  Roadmap
-                </Link>
-                <Link
                   className={`nav-link mr-1 ${isNavLinkActive('/#features')}`}
                   to="/#features"
                   onClick={() => scrollToSection('features')}
                 >
                   Features
+                </Link>
+                <Link
+                  className={`nav-link mr-1 ${isNavLinkActive('/#roadmap')}`}
+                  to="/#roadmap"
+                  onClick={() => scrollToSection('roadmap')}
+                >
+                  Roadmap
                 </Link>
                 <a
                   className={`nav-link mr-1 }`}

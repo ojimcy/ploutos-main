@@ -31,21 +31,9 @@ export default function Hero() {
                   worldwide, we offer diverse utilities. Join us in
                   revolutionizing the Crypto space.
                 </p>
-                <div className="get-sterted">
-                  <Link
-                    className="btn btn-primary hero-btn btn-gradient btn-shadow"
-                    to="/dashboard"
-                  >
-                    Get Started
-                  </Link>
-
-                  <Link className=" paper-btn" to={pdf} target="_blank">
-                    White Paper
-                  </Link>
-                </div>
               </div>
               <div className="d-flex flex-wrap  button-wrapper">
-                <Link className="hero-btn get-started-btn" to="/">
+                <Link className="hero-btn get-started-btn" to="/dashboard">
                   Get Started
                 </Link>
                 <Link className="hero-btn paper-btn" to={pdf} target="_blank">
