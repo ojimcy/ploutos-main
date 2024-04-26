@@ -1,3 +1,7 @@
+.tokenomics-section {
+  padding: 95px 0;
+  background: #ffff;
+}
 .wrapper {
   height: 795px;
   padding: 27px 74px 27px 74px;
@@ -24,18 +28,19 @@
 }
 
 .title {
-  font-size: 32px;
-  font-weight: bold;
-  line-height: 36.64px;
+  font-size: 46px;
+  line-height: 60px;
+  font-weight: 700;
+  font-family: Chakra Petch, sans-serif;
   color: #001e5f;
 }
 
 .sub-title h6 {
   font-size: 20px;
   font-weight: 400;
-  line-height: 22.9px;
+  font-family: Inter, sans-serif;
+  color: rgba(0, 30, 95, 0.8);
   text-align: center;
-  color: #001e5f;
 }
 
 .details {
@@ -47,11 +52,11 @@
   display: flex;
   align-items: center;
   margin-bottom: 15px;
-
   font-size: 16px;
   font-weight: 600;
   line-height: 18.32px;
   text-align: left;
+  color: rgba(0, 30, 95, 0.8);
 }
 
 .tokenomics-list li:before {

@@ -3,6 +3,7 @@
   transform: translate(-100vw) rotate(5deg);
   background-color: #30aca6;
   height: 93px;
+  overflow-x: hidden; 
 }
 
 .marquee {
@@ -54,6 +55,7 @@
     transform: translate(0) rotate(0);
     height: 73px;
     margin-top: 35px;
+    overflow-x: hidden; 
   }
   .marquee li {
     transform: none;

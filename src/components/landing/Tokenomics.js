@@ -7,7 +7,7 @@ import tokenomics from '../../assets/images/graph.png';
 
 function Tokenomics() {
   return (
-    <section id="tokenomics" className="section-wrapper">
+    <section id="tokenomics" className="section-wrapper tokenomics-section">
       <Container>
         <div className="wrapper">
           <div className="top-header">

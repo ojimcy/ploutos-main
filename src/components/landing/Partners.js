@@ -28,9 +28,7 @@ const Partner = () => {
     <section className="partner-section">
       <div className="marquee-wrapper">
         <div className="marquee">
-          <ul>
-            {renderPartnerLogos()} {/* Render list items dynamically */}
-          </ul>
+          <ul>{renderPartnerLogos()}</ul>
         </div>
       </div>
     </section>
