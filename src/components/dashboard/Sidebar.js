@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from 'react';
 import { Link } from 'react-router-dom';
-import { FaBars, FaTimes, FaWallet } from 'react-icons/fa';
+import { FaWallet } from 'react-icons/fa';
 import logo from '../../assets/images/logo-white.png';
 import './dashboard.css';
 import {
@@ -11,28 +11,8 @@ import {
 } from 'reactstrap';
 
 export default function Sidebar() {
-  const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
-  const [isMobileDevice, setIsMobileDevice] = useState(false);
   const [walletAddress, setWalletAddress] = useState('');
   const [loginOption, setLoginOption] = useState('');
-
-  const toggleMobileMenu = () => {
-    setIsMobileMenuOpen(!isMobileMenuOpen);
-  };
-
-  useEffect(() => {
-    const handleResize = () => {
-      setIsMobileDevice(window.innerWidth <= 768);
-    };
-
-    handleResize();
-
-    window.addEventListener('resize', handleResize);
-
-    return () => {
-      window.removeEventListener('resize', handleResize);
-    };
-  }, []);
 
   const connectWallet = () => {
     // Logic to connect the wallet and retrieve the address
@@ -56,7 +36,7 @@ export default function Sidebar() {
 
   return (
     <>
-      <div className="sidenav-container">
+      <div className="sidenav-container d-flex justify-content-between">
         <div className="nav-header">
           <Link to="/" className="brand-logo">
             <img src={logo} alt="logo" className="logo-abbr" />
@@ -66,16 +46,7 @@ export default function Sidebar() {
         <div className="header">
           <div className="header-content">
             <nav className="navbar navbar-expand">
-              <div className="collapse navbar-collapse justify-content-between">
-                <div className="header-left">
-                  <div className="dashboard_bar">
-                    {isMobileDevice && (
-                      <div className="navicon" onClick={toggleMobileMenu}>
-                        {isMobileMenuOpen ? <FaTimes /> : <FaBars />}
-                      </div>
-                    )}
-                  </div>
-                </div>
+              <div className="collapse navbar-collapse justify-content-end">
                 <div className="navbar-nav header-right">
                   {walletAddress ? (
                     <div className="header-profile">

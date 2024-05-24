@@ -44,9 +44,6 @@
   width: 100%;
 }
 
-.nav-header .logo-abbr {
-  height: 57px;
-}
 
 .navbar {
   width: 100%;
@@ -56,7 +53,7 @@
   position: fixed;
   top: 0;
   width: 100%;
-  background: transparent;
+  background-color: rgba(0, 0, 0, 0.9);
   height: 5rem;
   padding: 0px 43px 0 9.563rem;
   position: relative;
@@ -415,9 +412,9 @@
   font-family: filson-soft, sans-serif;
   font-weight: 400 !important;
   line-height: 1 !important;
-  border: 2px solid #001e5f;
+  border: 2px solid #ffffff;
   background: transparent !important;
-  color: #001e5f !important;
+  color: #ffffff !important;
 }
 
 @media screen and (max-width: 768px) {
@@ -426,7 +423,6 @@
   }
   .nav-header {
     width: 9.75rem;
-    background-color: #fff;
   }
 
   .sidebar-main {
@@ -463,6 +459,11 @@
     padding-left: 0;
     padding-right: 0;
   }
+}
+
+.allocation-form input {
+  background: transparent !important;
+  padding: 13px;
 }
 
 @media screen and (max-width: 993px) {

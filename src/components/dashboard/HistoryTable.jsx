@@ -6,12 +6,14 @@ const History = ({ history }) => {
   return (
     <div className="history-table">
       <Row>
-        <h3>Claim History</h3>
-        <Table striped style={{ backgroundColor: 'transparent' }}>
+        <h3>History</h3>
+        <Table striped responsive>
           <thead>
             <tr>
               <th>#</th>
               <th>Date</th>
+              <th>Name</th>
+              <th>Wallet Address</th>
               <th>Amount</th>
             </tr>
           </thead>
@@ -20,6 +22,8 @@ const History = ({ history }) => {
               <tr key={index}>
                 <th scope="row">{index + 1}</th>
                 <td>{claim.date}</td>
+                <td>{claim.name}</td>
+                <td>{claim.walletAddress}</td>
                 <td>{claim.amount}</td>
               </tr>
             ))}
