@@ -7,6 +7,7 @@ import DashboardLayout from './components/layout/DashboardLayout';
 
 import WOW from 'wowjs';
 import 'wowjs/css/libs/animate.css';
+import ClaimAirdrop from './components/dashboard/claim';
 
 const App = () => {
   useEffect(() => {
@@ -33,6 +34,7 @@ const App = () => {
             <DashboardLayout>
               <Routes>
                 <Route index element={<Dashboard />} />
+                <Route path='claim' element={<ClaimAirdrop />} />
               </Routes>
             </DashboardLayout>
           }

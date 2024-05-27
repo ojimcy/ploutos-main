@@ -44,7 +44,6 @@
   width: 100%;
 }
 
-
 .navbar {
   width: 100%;
 }
@@ -182,29 +181,30 @@
   display: flex;
   flex-direction: column;
   align-items: center;
-  flex-basis: calc(33.3333333333% - 64px);
-  flex-grow: 1;
-  padding: 45px 24px 50px;
-  border-radius: 50px;
-  border: 1px solid rgba(255, 255, 255, 0.65);
-  background: linear-gradient(180deg, #ff00f500 0%, #49003500 100%);
-  -webkit-backdrop-filter: blur(15px);
-  backdrop-filter: blur(15px);
-  transform: translateZ(0);
+  justify-content: center;
+  width: 306px;
+  height: 157px;
+  gap: 0px;
+  border-radius: 30px;
+  opacity: 0px;
+  background: linear-gradient(
+    180deg,
+    rgba(0, 25, 255, 0.24) 0%,
+    rgba(0, 15, 153, 0.24) 100%
+  );
+
 }
 
 .points-card .label {
   display: flex;
   align-items: center;
   flex-direction: row;
-  gap: 4px;
-  font-size: 1.5rem;
-  font-style: italic;
-  font-weight: 350;
-  line-height: 1.2;
-  margin-bottom: 28px;
-  font-size: 1.25rem;
-  color: #ffca45;
+  font-family: Montserrat;
+  font-size: 15px;
+  font-weight: 300;
+  line-height: 22.9px;
+  text-align: left;
+  opacity: 0.8px;
 }
 
 .points-card .amount {
@@ -249,9 +249,7 @@
 }
 
 .history-table {
-  padding: 2rem;
   border-radius: 15px;
-  min-height: 243px;
   margin-top: 5rem;
 }
 
@@ -399,13 +397,21 @@
   line-height: 0.72;
   border: 1px solid #ffca45;
 }
+
 .claim-btn {
   color: #ffffff;
   font-weight: 400;
   line-height: 0.72;
-  border: 1px solid #ff00d6;
   margin-left: 10px;
-  max-width: 90px !important;
+  width: 272px;
+  height: 118px;
+  border-radius: 30px;
+  background: linear-gradient(180deg, #00d509 0%, #006f04 100%);
+  font-family: Montserrat;
+  font-size: 62px;
+  font-weight: 800;
+  line-height: 70.99px;
+  text-align: left;
 }
 
 .connect-btn {
@@ -415,6 +421,12 @@
   border: 2px solid #ffffff;
   background: transparent !important;
   color: #ffffff !important;
+}
+
+.claim-intro {
+  max-width: 621px;
+  height: 208px;
+  opacity: 0.8px;
 }
 
 @media screen and (max-width: 768px) {
