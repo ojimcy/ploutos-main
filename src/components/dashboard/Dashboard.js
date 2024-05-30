@@ -16,7 +16,7 @@ function MainDashboard() {
             <Form className="allocation-form">
               <FormGroup>
                 <Label for="walletAddress">Wallet Address</Label>
-
+ 
                 <Input type="text" id="walletAddress" required />
               </FormGroup>
               <FormGroup>
